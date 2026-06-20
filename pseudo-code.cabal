@@ -1,0 +1,25 @@
+cabal-version:      3.0
+name:               pseudo-code
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            GPL-2.0-only
+license-file:       LICENSE
+author:             avshm
+maintainer:         a.github@protonmail.com
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable haskell
+    import:           warnings
+    main-is:          Main.hs
+    other-modules: AST Evaluator Lexer Parser Runtime Token
+    -- other-extensions:
+    build-depends:    base ^>=4.18.3.0
+    hs-source-dirs:   app src
+    default-language: Haskell2010
