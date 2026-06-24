@@ -210,7 +210,7 @@ PRINT variable
 Supported Data Types:
 ```
 Integers
-Floating-point numbers
+Floats
 Strings
 ```
 Supported Operators:
@@ -229,10 +229,18 @@ Mutable variables:
 SET counter TO 1
 SET counter TO counter + 1
 ```
+Single-line comments:
+```
+# Choose an integer x
+SET x TO 64
+
+# Find x squared, add 3, and store the value in y
+SET y TO x * x + 3
+```
 
 ## Future Work
+- Unary operators
 - Floating-point arithmetic
-- Comments
 - Boolean values
 - Comparison operators
 - IF statements
